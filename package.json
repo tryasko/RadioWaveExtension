@@ -1,7 +1,7 @@
 {
   "name": "radio-wave-extension",
   "version": "3.0.0",
-  "description": "The simple browser extension for listen to online radio",
+  "description": "A simple browser extension for listening to online radio",
   "main": "index.js",
   "scripts": {
     "start": "webpack --config webpack.config.js",
