@@ -1,4 +1,9 @@
+#Git
+.git
 
+# NodeJS
+node_modules/
+npm-debug.log
 
-# 
-node_modules
+#Project files
+dev/
