@@ -1,7 +1,15 @@
 const path = require('path');
+const webpack = require('webpack');
+const merge = require('webpack-merge');
 
 
 module.exports = {
+  watch: true,
+
+  resolve: {
+    extensions: ['.js', '.coffee']
+  },
+
   entry: {
     background: './source/background',
     options:    './source/options',
@@ -13,29 +21,23 @@ module.exports = {
     filename: '[name]/index.js'
   },
 
-  watch: true,
-
   module: {
     rules: [
       {
         test: /\.coffee$/,
-        enforce: "pre",
         exclude: /node_modules/,
-        loader: "coffee-loader"
-      },
-
-      {
-        test: /\.coffee$/,
-        exclude: /node_modules/,
-        loader: "babel-loader",
-        options: {
-          presets: ["react"]
-        }
+        use: [
+          {loader: "babel-loader", options: {presets: ["react"]}},
+          {loader: "coffee-loader"}
+        ]
       },
     ]
   },
 
-  resolve: {
-    extensions: ['.js', '.coffee']
-  }
+  plugins: [
+    new webpack.ProvidePlugin({
+      React: 'react',
+      ReactDOM: 'react-dom'
+    })
+  ]
 };
