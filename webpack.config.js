@@ -11,9 +11,9 @@ module.exports = {
   },
 
   entry: {
-    background: './source/background',
+    // background: './source/background/',
     options:    './source/options',
-    popup:      './source/popup'
+    // popup:      './source/popup'
   },
 
   output: {
