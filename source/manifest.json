@@ -20,12 +20,12 @@
 
 
  "background": {
-    "page": "background.html"
+    "page": "./background/index.html"
   },
 
 
   "browser_action": {
-    "default_popup": "popup.html",
+    "default_popup": "./popup/index.html",
     "default_icon": {
       "16": "icons/16.png",
       "24": "icons/24.png",
@@ -40,18 +40,18 @@
 
 
   "options_ui": {
-    "page": "options.html",
+    "page": "./options/index.html",
     "chrome_style": true,
     "open_in_tab": true
-  },
+  }
 
 
   //#FF
-  "applications": {
-    "gecko": {
-      "id": "extension@radiowave.in.ua",
-      "strict_min_version": "50.0"
-    }
-  }
+  // "applications": {
+  //   "gecko": {
+  //     "id": "extension@radiowave.in.ua",
+  //     "strict_min_version": "50.0"
+  //   }
+  // }
   //#FF
 }
