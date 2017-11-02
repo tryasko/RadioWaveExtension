@@ -1,7 +1,5 @@
-import React, { Component } from 'react'
 
-
-export default class Router extends Component
+export default class Router extends React.Component
   constructor: ->
     super()
     @state = { url: window.location.hash }
