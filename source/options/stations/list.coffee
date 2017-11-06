@@ -1,7 +1,5 @@
-# import './list.css';
+import './list.scss';
 
-# import imageUpArrow from './img/up-arrow.svg';
-# import imageDownArrow from './img/down-arrow.svg';
 
 export default class List extends React.Component
   constructor: ->
@@ -37,7 +35,7 @@ export default class List extends React.Component
         <img 
           className="list-group-header-arrow-image" 
           alt={groupState} 
-          src={groupState ? 'imageDownArrow' : 'imageUpArrow'}
+          src={if groupState then './img/down-arrow.svg' else './img/up-arrow.svg'}
         />
       </div>
     </div>
