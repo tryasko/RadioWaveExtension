@@ -1,4 +1,4 @@
-# import './navbar.css';
+import './navbar.scss';
 
 export default class Navbar extends React.Component
   render: ->
@@ -25,4 +25,4 @@ export default class Navbar extends React.Component
     </div>
 
   getItemClassName: (pageName, itemName)->
-    pageName is itemName ? 'Navbar-item active' : 'Navbar-item';
+    if pageName is itemName then 'Navbar-item active' else 'Navbar-item';
