@@ -4,44 +4,59 @@ import './list.scss';
 export default class List extends React.Component
   constructor: ->
     super()
-    @state = {}
+    @state = { stations: JSON.parse(localStorage["stations"]) }
 
   onCollapseGroup: (groupName)->
-    groupState = {}
-    groupState[groupName] = not @state[groupName]
+    stations = @state.stations.map ({group, collapsed, list}) ->
+      if groupName is group
+        {group, collapsed: not collapsed, list}
+      else
+        {group, collapsed, list}
 
-    @setState(groupState)
+    @setStations(stations)
+
+  onSelectStation: (groupName, stationName)->
+    stations = @state.stations.map ({group, collapsed, list}) ->
+      if groupName is group
+        item.selected = not item.selected for item in list when item.name is stationName
+        {group, collapsed, list}
+      else
+        {group, collapsed, list}
+
+    @setStations(stations)
+
+  setStations: (stations)->
+    @setState({stations})
+    localStorage.setItem('stations', JSON.stringify(stations))
 
   render: ->
     <div className="list">
-      {@props.stations.map(@renderGroup)}
+      {@state.stations.map(@renderGroup)}
     </div>
 
-  renderGroup: ({group, list}, index)=>
-    groupState = @state[group];
-
+  renderGroup: ({group, collapsed, list}, index)=>
     <div key={index} className="list-group">
-      {@renderHeader(group, groupState)}
-
-      {not groupState && list.map(@renderItem)}
+      {@renderHeader(group, collapsed)}
+      {if collapsed then null else list.map((station) => @renderItem(group, station))}
     </div>
 
-  renderHeader: (groupName, groupState)=>
+  renderHeader: (group, collapsed)=>
     <div className="list-group-header">
       <div className="list-group-header-name">
-        {groupName}
+        {group}
       </div>
-      <div className="list-group-header-arrow" onClick={=> @onCollapseGroup(groupName)}>
+
+      <div className="list-group-header-arrow" onClick={=> @onCollapseGroup(group)}>
         <img 
           className="list-group-header-arrow-image" 
-          alt={groupState} 
-          src={if groupState then './img/down-arrow.svg' else './img/up-arrow.svg'}
+          alt={'Station group collapsed'} 
+          src={if collapsed then './img/down-arrow.svg' else './img/up-arrow.svg'}
         />
       </div>
     </div>
 
-  renderItem: ({name})=>
+  renderItem: (group, {name, selected})=>
     <label key={name} className="station">
-      <input type="checkbox"/>
+      <input type="checkbox" checked={selected} onClick={=> @onSelectStation(group, name)} />
       <span className="station-name">{name}</span>
     </label>
