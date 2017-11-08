@@ -1,24 +1,25 @@
-const path = require('path');
-const webpack = require('webpack');
-const merge = require('webpack-merge');
+const path = require("path");
+const webpack = require("webpack");
+const merge = require("webpack-merge");
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 
 module.exports = {
   watch: true,
 
   resolve: {
-    extensions: ['.js', '.coffee']
+    extensions: [".js", ".coffee"]
   },
 
   entry: {
-    background: './source/background/',
-    options:    './source/options',
-    popup:      './source/popup'
+    background: "./source/background/",
+    options:    "./source/options",
+    popup:      "./source/popup"
   },
 
   output: {
-    path: path.resolve(__dirname, 'dev'),
-    filename: '[name]/index.js'
+    path: path.resolve(__dirname, "dev"),
+    filename: "[name]/index.js"
   },
 
   module: {
@@ -34,19 +35,21 @@ module.exports = {
 
       {
         test: /\.scss$/,
-        use: [
-          "style-loader",
-          "css-loader",
-          "sass-loader"
-        ]
+        use: ExtractTextPlugin.extract({
+          use: ["css-loader", "sass-loader"]
+        })
       },
     ]
   },
 
   plugins: [
     new webpack.ProvidePlugin({
-      React: 'react',
-      ReactDOM: 'react-dom'
+      React: "react",
+      ReactDOM: "react-dom"
+    }),
+
+    new ExtractTextPlugin({
+      filename: getPath => getPath("[name]/style.css")
     })
   ]
 };
