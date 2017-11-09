@@ -49,7 +49,7 @@ export default class List extends React.Component
       <div className="list-group-header-arrow" onClick={=> @onCollapseGroup(group)}>
         <img 
           className="list-group-header-arrow-image" 
-          alt={'Station group collapsed'} 
+          alt={if collapsed then 'down' else 'up'} 
           src={if collapsed then './img/down-arrow.svg' else './img/up-arrow.svg'}
         />
       </div>
