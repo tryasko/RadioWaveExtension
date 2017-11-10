@@ -1,1 +1,3 @@
-console.log 'background'
+import './index.scss';
+
+console.log 'Hello POPUP!'

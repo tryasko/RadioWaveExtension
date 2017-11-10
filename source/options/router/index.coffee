@@ -11,7 +11,13 @@ export default class Router extends React.Component
     @state = { url: window.location.hash }
 
   componentDidMount: -> 
-    window.addEventListener("hashchange", => @setState({ url: window.location.hash }))
+    window.addEventListener("hashchange", @setURL)
+
+  componentWillUnmount: ->
+    window.removeEventListener("hashchange", @setURL)
+
+  setURL: (url)=>
+    @setState({ url: window.location.hash })
 
   render: ->
     {pageName, pageElement} = @getPage(@state.url)
