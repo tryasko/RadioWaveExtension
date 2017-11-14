@@ -1,3 +1,4 @@
 import './index.scss';
+import Player from './player'
 
-console.log 'Hello POPUP!'
+ReactDOM.render(<Player />, document.getElementById('root'))
