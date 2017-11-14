@@ -18,7 +18,7 @@ export default class List extends React.Component
   onSelectStation: (groupName, stationName)->
     stations = @state.stations.map ({group, collapsed, list}) ->
       if groupName is group
-        item.selected = not item.selected for item in list when item.name is stationName
+        item.favorite = not item.favorite for item in list when item.name is stationName
         {group, collapsed, list}
       else
         {group, collapsed, list}
@@ -55,8 +55,8 @@ export default class List extends React.Component
       </div>
     </div>
 
-  renderItem: (group, {name, selected})=>
+  renderItem: (group, {name, favorite})=>
     <label key={name} className="station">
-      <input type="checkbox" checked={selected} onClick={=> @onSelectStation(group, name)} />
+      <input type="checkbox" checked={favorite} onClick={=> @onSelectStation(group, name)} />
       <span className="station-name">{name}</span>
     </label>
