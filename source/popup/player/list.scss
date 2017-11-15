@@ -1,0 +1,26 @@
+.play_list {
+	width: 234px;
+	max-height: 227px;
+	overflow: hidden;
+	overflow-y: auto;
+	list-style: none;
+}
+
+.play_list .station {
+	height: 24px;
+	padding-left: 24px;
+	cursor: pointer;
+	font-family: verdana, tahoma, arial, sans-serif;
+	font-size: 12px;
+	line-height: 24px;
+	color: #212121;
+}
+
+.play_list .station:hover {
+	background: #e2e5e9;
+}
+
+.play_list .station.active {
+	color: #f1f1f1;
+	background: #5E82A8;
+}
