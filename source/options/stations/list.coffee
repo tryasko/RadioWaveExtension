@@ -4,49 +4,49 @@ import './list.scss';
 export default class List extends React.Component
   constructor: ->
     super()
-    @state = { stations: JSON.parse(localStorage["stations"]) }
+    @state = { 
+      groups: JSON.parse(localStorage["groups"]) 
+      stations: JSON.parse(localStorage["stations"]) 
+    }
 
-  onCollapseGroup: (groupName)->
-    stations = @state.stations.map ({group, collapsed, list}) ->
-      if groupName is group
-        {group, collapsed: not collapsed, list}
-      else
-        {group, collapsed, list}
+  onCollapseGroup: (groupName)=>
+    groups = @state.groups.map (group)->
+      if group.name is groupName
+        group.collapsed = not group.collapsed
+      group
 
-    @setStations(stations)
+    @setData("groups", groups)
 
-  onSelectStation: (groupName, stationName)->
-    stations = @state.stations.map ({group, collapsed, list}) ->
-      if groupName is group
-        item.favorite = not item.favorite for item in list when item.name is stationName
-        {group, collapsed, list}
-      else
-        {group, collapsed, list}
+  onSelectStation: (stationName, groupName)=>
+    stations = @state.stations.map (station)=>
+      if station.name is stationName and station.group is groupName
+        station.favorite = not station.favorite
+      station
 
-    @setStations(stations)
+    @setData("stations", stations)
 
-  setStations: (stations)->
-    @setState({stations})
-    localStorage.setItem('stations', JSON.stringify(stations))
+  setData: (key, data)=>
+    @setState({key: data})
+    localStorage.setItem(key, JSON.stringify(data))
 
   render: ->
     <div className="list">
-      {@state.stations.map(@renderGroup)}
+      {@state.groups.map(@renderGroup)}
     </div>
 
-  renderGroup: ({group, collapsed, list}, index)=>
+  renderGroup: ({name, collapsed}, index)=>
     <div key={index} className="list-group">
-      {@renderHeader(group, collapsed)}
-      {if collapsed then null else list.map((station) => @renderItem(group, station))}
+      {@renderHeader(name, collapsed)}
+      {if collapsed then null else @renderList(name)}
     </div>
 
-  renderHeader: (group, collapsed)=>
+  renderHeader: (name, collapsed)=>
     <div className="list-group-header">
       <div className="list-group-header-name">
-        {group}
+        {name}
       </div>
 
-      <div className="list-group-header-arrow" onClick={=> @onCollapseGroup(group)}>
+      <div className="list-group-header-arrow" onClick={=> @onCollapseGroup(name)}>
         <img 
           className="list-group-header-arrow-image" 
           alt={if collapsed then 'down' else 'up'} 
@@ -55,8 +55,13 @@ export default class List extends React.Component
       </div>
     </div>
 
-  renderItem: (group, {name, favorite})=>
-    <label key={name} className="station">
-      <input type="checkbox" checked={favorite} onClick={=> @onSelectStation(group, name)} />
+  renderList: (groupName)=>
+    @state.stations
+      .filter (station)-> station.group is groupName
+      .map @renderItem
+
+  renderItem: ({name, group, favorite})=>
+    <label key={name+group} className="station">
+      <input type="checkbox" checked={favorite} onChange={=> @onSelectStation(name, group)} />
       <span className="station-name">{name}</span>
     </label>
