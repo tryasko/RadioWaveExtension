@@ -1,5 +1,4 @@
 import stations from './stations'
 
-localStorage.setItem('stations', JSON.stringify(stations))
-
-console.log 'Hello BACKGROUND!'
+localStorage.setItem('groups', JSON.stringify(stations.groups))
+localStorage.setItem('stations', JSON.stringify(stations.stations))
