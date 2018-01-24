@@ -9,27 +9,32 @@ export default class List extends React.Component
   componentDidMount: ->
     document.querySelector('.station.active').scrollIntoView()
 
-  onPlayStation: (stationName)->
-    console.log 'play station ' + stationName
+  onPlayStation: (groupName, stationName)=>
+    stations = @state.stations.map (station)->
+      if station.name is stationName and station.group is groupName
+        station.active = yes
+      else
+        station.active = no
+      station
+
+    @setState({"stations": stations})
+    localStorage.setItem("stations", JSON.stringify(stations))
 
   render: ->
     <ul className="play_list">
-      {@state.stations.map @renderGroup}
+      {
+        @state.stations
+          .filter ({favorite})-> favorite
+          .map @renderItem
+      }
     </ul>
 
-  renderGroup: ({group, list}, index)=>
-    <div key={index}>
-      {list.map @renderItem}
-    </div>
-
-  renderItem: ({name, favorite, active}, index)=>
-    return null unless favorite
-
+  renderItem: ({name, group, active}, index)=>
     if active
       <li key={index} className="station active">
         {name}
       </li>
     else
-      <li key={index} className="station" onClick={=> @onPlayStation(name)}>
+      <li key={index} className="station" onClick={=> @onPlayStation(group, name)}>
         {name}
       </li>
