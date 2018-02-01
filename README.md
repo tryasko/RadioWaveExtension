@@ -1,9 +1,9 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/tryasko/files/master/RadioWaveExtension/2.0.0/icon-256.png" alt="Radio Wave" width="128">
+</p>
+
 <h1 align="center">
-  <br>
-    <img src="https://raw.githubusercontent.com/tryasko/files/master/RadioWaveExtension/2.0.0/icon-256.png" alt="Radio Wave" width="128">
-  <br>
     Radio Wave
-  <br>
 </h1>
 
 <h4 align="center">
