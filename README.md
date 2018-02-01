@@ -36,3 +36,5 @@ Congrats! Enjoy the radios.
 ## Station List
 
 ## License
+
+Radio Wave Extension is made available under the [MIT License](https://raw.githubusercontent.com/tryasko/RadioWaveExtension/master/LICENSE).
