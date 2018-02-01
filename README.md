@@ -23,6 +23,14 @@
 
 ## Install from Store
 
+Installation from Chrome Web Store is most natural way to get this extension.
+
+* You need Google Chrome browser. [You can get it on official page](https://www.google.com/intl/en/chrome/)
+* After, you need open link in store. [Radio Wave in Chrome Web Store](https://chrome.google.com/webstore/detail/radio-wave/onmajcldinagenagjgbbdmejcgihkcig)
+* And last. Push to «Add to Chrome» button
+
+Congrats! Enjoy the radios.
+
 ## Install from Source
 
 ## Station List
