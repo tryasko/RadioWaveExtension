@@ -38,12 +38,12 @@ Congrats! Enjoy the radios.
 Station list you can see in source file. [popup/script.js](https://raw.githubusercontent.com/tryasko/RadioWaveExtension/master/popup/script.js)
 
 Some popular stations:
-* KissFM UA
-* Radio ROKS
-* Pirate Station
-* Radio Record
-* GarageFM
-* Channel 5
+* [KissFM UA](https://www.kissfm.ua/)
+* [Radio ROKS](https://www.radioroks.ua/)
+* [Pirate Station](http://www.radiorecord.ru/ps/)
+* [Radio Record](http://www.radiorecord.ru/)
+* [GarageFM](http://garagefm.ru/)
+* [Channel 5](http://promodj.com/radio#channel5)
 * Radio Feel
 
 ## License
