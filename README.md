@@ -35,6 +35,17 @@ Congrats! Enjoy the radios.
 
 ## Station List
 
+Station list you can see in source file. [popup/script.js](https://raw.githubusercontent.com/tryasko/RadioWaveExtension/master/popup/script.js)
+
+Some popular stations:
+* KissFM UA
+* Radio ROKS
+* Pirate Station
+* Radio Record
+* GarageFM
+* Channel 5
+* Radio Feel
+
 ## License
 
 Radio Wave Extension is made available under the [MIT License](https://raw.githubusercontent.com/tryasko/RadioWaveExtension/master/LICENSE).
