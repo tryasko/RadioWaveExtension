@@ -10,6 +10,10 @@
   A simple Chrome extension what allows listen to online radios. Contains preset radio stations.
 </h4>
 
+<h5 align="center" fontSize="12px">
+  v2.0.0
+</h5>
+
 <p align="center">
   <a href="#install-from-store">Install from Store</a> •
   <a href="#install-from-source">Instal from Source</a> •
