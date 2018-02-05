@@ -45,6 +45,8 @@ Installing from the sources makes sense if you want to learn, modify, or have on
 * Go to chrome://extensions/ and check the box for «Developer mode» in the top right.
 * Click on the «Load unpacked extension» button and select the unzipped folder with extension to install it.
 
+Congrats! Enjoy the radios.
+
 ## Station List
 
 Station list you can see in source file. [popup/script.js](https://raw.githubusercontent.com/tryasko/RadioWaveExtension/master/popup/script.js)
