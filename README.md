@@ -37,6 +37,14 @@ Congrats! Enjoy the radios.
 
 ## Install from Source
 
+Installing from the sources makes sense if you want to learn, modify, or have one of the older version.
+
+* You need Google Chrome browser. [You can get it on official page](https://www.google.com/intl/en/chrome/)
+* Clone or download [repository](https://github.com/tryasko/RadioWaveExtension)
+* Unzip downloaded files.
+* Open extensions page in Chrome browser. Insert this url in browser and open -> chrome://extensions/
+* Turn on «Developer mode» checkbox.
+
 ## Station List
 
 Station list you can see in source file. [popup/script.js](https://raw.githubusercontent.com/tryasko/RadioWaveExtension/master/popup/script.js)
