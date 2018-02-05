@@ -31,7 +31,7 @@ Installation from Chrome Web Store is most natural way to get this extension.
 
 * You need Google Chrome browser. [You can get it on official page](https://www.google.com/intl/en/chrome/)
 * After, you need open link in store. [Radio Wave in Chrome Web Store](https://chrome.google.com/webstore/detail/radio-wave/onmajcldinagenagjgbbdmejcgihkcig)
-* And last. Push to «Add to Chrome» button
+* And last. Push to **«Add to Chrome»** button
 
 Congrats! Enjoy the radios.
 
@@ -42,8 +42,8 @@ Installing from the sources makes sense if you want to learn, modify, or have on
 * You need Google Chrome browser. [You can get it on official page](https://www.google.com/intl/en/chrome/)
 * Clone or download [repository](https://github.com/tryasko/RadioWaveExtension)
 * Unzip downloaded files.
-* Go to chrome://extensions/ and check the box for «Developer mode» in the top right.
-* Click on the «Load unpacked extension» button and select the unzipped folder with extension to install it.
+* Go to chrome://extensions/ and check the box for **«Developer mode»** in the top right.
+* Click on the **«Load unpacked extension»** button and select the unzipped folder with extension to install it.
 
 Congrats! Enjoy the radios.
 
