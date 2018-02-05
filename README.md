@@ -42,8 +42,8 @@ Installing from the sources makes sense if you want to learn, modify, or have on
 * You need Google Chrome browser. [You can get it on official page](https://www.google.com/intl/en/chrome/)
 * Clone or download [repository](https://github.com/tryasko/RadioWaveExtension)
 * Unzip downloaded files.
-* Open extensions page in Chrome browser. Insert this url in browser and open -> chrome://extensions/
-* Turn on «Developer mode» checkbox.
+* Go to chrome://extensions/ and check the box for «Developer mode» in the top right.
+* Click on the «Load unpacked extension» button and select the unzipped folder with extension to install it.
 
 ## Station List
 
