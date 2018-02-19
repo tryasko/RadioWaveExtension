@@ -30,23 +30,23 @@ window.stationList = [
   },
 
   {
-    name: "Pdj GarageFM",
-    stream: "http://91.213.196.100:8000/garagefm-192"
-  },
-
-  {
     name: "Pdj TOP 100",
     stream: "http://91.213.196.100:8000/top100-192"
   },
 
   {
-    name: "Pdj Old-School",
-    stream: "http://91.213.196.100:8000/oldschool-192"
+    name: "Pdj Channel 5",
+    stream: "http://91.213.196.100:8000/channel5-192"
   },
 
   {
-    name: "Pdj Channel 5",
-    stream: "http://91.213.196.100:8000/channel5-192"
+    name: "Pdj GarageFM",
+    stream: "http://91.213.196.100:8000/garagefm-192"
+  },
+
+  {
+    name: "Pdj Trap",
+    stream: "http://91.213.196.100:8000/trap-192"
   },
 
   {
@@ -112,6 +112,11 @@ window.stationList = [
   {
     name: "Pdj Pop",
     stream: "http://91.213.196.100:8000/pop-192"
+  },
+
+  {
+    name: "Pdj Old-School",
+    stream: "http://91.213.196.100:8000/oldschool-192"
   },
 
   {
