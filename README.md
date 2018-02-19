@@ -49,8 +49,7 @@ Congrats! Enjoy the radios.
 
 ## Station List
 
-Station list you can see in source file. [popup/stations.js](https://raw.githubusercontent
-.com/tryasko/RadioWaveExtension/master/popup/stations.js)
+Station list you can see in source file. [popup/stations.js](https://raw.githubusercontent.com/tryasko/RadioWaveExtension/master/popup/stations.js)
 
 Some popular stations:
 * [KissFM UA](https://www.kissfm.ua/)
