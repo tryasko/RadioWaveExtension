@@ -19,12 +19,12 @@ var player = chrome.extension.getBackgroundPage().player;
         list[i].setAttribute("class", "selected");
       }
     }
+
+    document.querySelector(".selected").scrollIntoView();
   }
 
   cnt_play.setAttribute("class", db.state);
   cnt_volume_bar.style.width = db.volume + "%";
-
-  document.querySelector(".selected").scrollIntoView();
 })();
 
 var clearSelected = function() {
