@@ -23,6 +23,8 @@ var player = chrome.extension.getBackgroundPage().player;
 
   cnt_play.setAttribute("class", db.state);
   cnt_volume_bar.style.width = db.volume + "%";
+
+  document.querySelector(".selected").scrollIntoView();
 })();
 
 var clearSelected = function() {
@@ -31,10 +33,6 @@ var clearSelected = function() {
   for (var l = list.length, i = 0; i < l; i += 1) {
     list[i].setAttribute("class", "");
   }
-};
-
-var focusSelected = function() {
-  document.querySelector(".selected").scrollIntoView();
 };
 
 var getVolume = function(e) {
@@ -113,12 +111,3 @@ play_list.addEventListener("click", function(e) {
 
   e.preventDefault();
 });
-
-play_list.addEventListener("transitionend", focusSelected);
-
-open_list.addEventListener("click", function(e) {
-  play_list.classList.toggle("show");
-  e.preventDefault();
-});
-
-focusSelected();
