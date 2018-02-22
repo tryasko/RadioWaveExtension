@@ -1,27 +1,17 @@
+"use strict";
+
 var down_on_volume = false;
 var db = localStorage;
 var player = chrome.extension.getBackgroundPage().player;
 
-(function() {
-  let list,
-    elems = "";
+(() => {
+  play_list.innerHTML = window.stationList
+    .map(({ name, stream }) => {
+      return `<li class="${db.stream === stream ? "selected" : ""}" data-id="${stream}">${name}</li>`;
+    })
+    .join("");
 
-  window.stationList.forEach(function(val, key) {
-    elems += `<li data-id="${key}">${val.name}</li>`;
-  });
-
-  play_list.innerHTML = elems;
-  list = play_list.getElementsByTagName("li");
-
-  if (db.selected !== undefined) {
-    for (var l = list.length, i = 0; i < l; i += 1) {
-      if (+list[i].getAttribute("data-id") === +db.selected) {
-        list[i].setAttribute("class", "selected");
-      }
-    }
-
-    document.querySelector(".selected").scrollIntoView();
-  }
+  document.querySelector(".selected").scrollIntoView();
 
   cnt_play.setAttribute("class", db.state);
   cnt_volume_bar.style.width = db.volume + "%";
@@ -96,16 +86,14 @@ cnt_volume.addEventListener("mousewheel", function(e) {
   e.preventDefault();
 });
 
-play_list.addEventListener("click", function(e) {
-  var id = +e.target.getAttribute("data-id");
-
+play_list.addEventListener("click", (e) => {
   clearSelected();
+
   e.target.setAttribute("class", "selected");
   cnt_play.setAttribute("class", "played");
 
-  db.selected = id;
   db.state = "played";
-  db.url = window.stationList[id].stream;
+  db.stream = e.target.getAttribute("data-id");
 
   player.setPlay();
 
