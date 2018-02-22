@@ -16,13 +16,15 @@ cnt_play.addEventListener("click", () => {
 });
 
 play_list.addEventListener("click", e => {
+  const element = e.target.closest("li");
+
   document.querySelector("#play_list .selected").setAttribute("class", "");
 
-  e.target.setAttribute("class", "selected");
+  element.setAttribute("class", "selected");
   cnt_play.setAttribute("class", "played");
 
   db.state = "played";
-  db.stream = e.target.getAttribute("data-id");
+  db.stream = element.getAttribute("data-id");
 
   player.setPlay();
 });
@@ -50,8 +52,11 @@ cnt_volume.addEventListener("mousewheel", e => {
   cnt_volume.value = db.volume;
 
   play_list.innerHTML = window.stationList
-    .map(({ name, stream }) => {
-      return `<li class="${db.stream === stream ? "selected" : ""}" data-id="${stream}">${name}</li>`;
+    .map(({ name, group, stream }) => {
+      return `<li class="${db.stream === stream ? "selected" : ""}" data-id="${stream}">
+          <span class="group">${group}</span>
+          <span class="name">${name}</span>
+        </li>`;
     })
     .join("");
 

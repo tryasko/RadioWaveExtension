@@ -68,6 +68,7 @@
 
             #play_list li {
                 height: 24px;
+                display: flex;
                 padding-left: 24px;
                 cursor: pointer;
                 font-family: verdana, tahoma, arial, sans-serif;
@@ -76,13 +77,31 @@
                 color: #212121;
             }
 
+            #play_list li .group {
+                width: 24px;
+                font-size: 9px;
+                color: #888;
+                font-weight: 100;
+            }
+
+            #play_list li .name {
+                flex: 1;
+            }
+
             #play_list li:hover {
                 background: #e2e5e9;
             }
 
             #play_list li.selected {
-                color: #f1f1f1;
                 background: #5E82A8;
+            }
+
+            #play_list li.selected .group {
+                color: #ccc;
+            }
+
+            #play_list li.selected .name {
+                color: #f1f1f1;
             }
 
             .bottom {
