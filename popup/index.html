@@ -58,30 +58,6 @@
                 background-position: -64px -32px;
             }
 
-            #cnt_volume {
-                width: 142px;
-                height: 8px;
-                padding: 2px 3px;
-                cursor: pointer;
-                position: absolute;
-                top: 23px;
-                left: 68px;
-            }
-
-            #cnt_volume .volume_wrapper {
-                width: 140px;
-                height: 6px;
-                border: 1px solid #32557c;
-                border-radius: 4px;
-                background-color: #567698;
-            }
-
-            #cnt_volume .volume_wrapper .volume_bar {
-                height: 6px;
-                border-radius: 5px;
-                background-color: #b4c8de;
-            }
-
             #play_list {
                 width: 234px;
                 height: 203px;
@@ -120,16 +96,49 @@
                 border-top: 5px solid #fcfcfc;
             }
         </style>
+
+        <style type="text/css" rel="stylesheet">
+            input[type=range] {
+                -webkit-appearance: none;
+                width: 142px;
+                padding: 6px 3px;
+                cursor: pointer;
+                position: absolute;
+                top: 21px;
+                left: 68px;
+                background-color: #5E82A8;
+            }
+
+            input[type=range]:focus {
+                outline: none;
+            }
+
+            input[type=range]::-webkit-slider-runnable-track {
+                width: 100%;
+                height: 6px;
+                cursor: pointer;
+                background: #567698;
+                border-radius: 3px;
+                border: 1px solid #32557c;
+            }
+
+            input[type=range]::-webkit-slider-thumb {
+                border: 1px solid #32557c;
+                height: 12px;
+                width: 12px;
+                border-radius: 6px;
+                background: #b4c8de;
+                cursor: pointer;
+                -webkit-appearance: none;
+                margin-top: -4px;
+            }
+        </style>
     </head>
 
     <body>
         <div class="controls">
             <div id="cnt_play"></div>
-            <div id="cnt_volume">
-                <div class="volume_wrapper">
-                    <div id="cnt_volume_bar" class="volume_bar"></div>
-                </div>
-            </div>
+            <input id="cnt_volume" type="range" min="0" max="100" step="1">
         </div>
 
         <ul id="play_list"></ul>
