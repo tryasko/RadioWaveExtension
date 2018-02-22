@@ -11,7 +11,7 @@
 </h4>
 
 <h5 align="center" fontSize="12px">
-  v2.0.0
+  v2.1.0
 </h5>
 
 <p align="center">
