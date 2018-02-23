@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/tryasko/files/master/RadioWaveExtension/2.0.0/icon-256.png" alt="Radio Wave" width="128">
+  <img src="https://raw.githubusercontent.com/tryasko/files/master/RadioWaveExtension/2.1.0/icon-256.png" alt="Radio Wave" width="128">
 </p>
 
 <h1 align="center">
@@ -22,7 +22,7 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/tryasko/files/master/RadioWaveExtension/2.0.0/rw-popup.png" alt="Radio Wave Popup">
+  <img src="https://raw.githubusercontent.com/tryasko/files/master/RadioWaveExtension/2.1.0/rw-popup.png" alt="Radio Wave Popup">
 </p>
 
 ## Install from Store
