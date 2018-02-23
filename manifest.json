@@ -1,6 +1,6 @@
 {
   "background": {
-    "scripts": ["./background/updater.js", "./background/player.js"]
+    "page": "background/index.html"
   },
   "browser_action": {
     "default_popup": "popup/index.html"
