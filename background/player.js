@@ -15,6 +15,7 @@ window.player = new class {
   }
 
   setStop() {
+    this.audio.pause();
     this.audio.src = "";
   }
 
