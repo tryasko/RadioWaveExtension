@@ -2,7 +2,7 @@
 
 //
 // update localStorage, use new data structure
-(() => {
+export default function updater() {
   const newState = { state: "stopped", volume: 30, stream: "http://online-kissfm.tavrmedia.ua/KissFM" };
   const oldState = JSON.parse(JSON.stringify(localStorage));
 
@@ -15,4 +15,4 @@
   localStorage.clear();
 
   Object.keys(state).forEach(key => localStorage.setItem(key, state[key]));
-})();
+}

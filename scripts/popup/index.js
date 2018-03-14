@@ -51,7 +51,7 @@ cnt_volume.addEventListener("mousewheel", e => {
   cnt_play.setAttribute("class", db.state);
   cnt_volume.value = db.volume;
 
-  play_list.innerHTML = window.stationList
+  play_list.innerHTML = JSON.parse(localStorage.stations)
     .map(({ name, group, stream }) => {
       return `<li class="${db.stream === stream ? "selected" : ""}" data-id="${stream}">
           <span class="group">${group}</span>
