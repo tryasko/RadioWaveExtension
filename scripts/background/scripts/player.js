@@ -3,10 +3,6 @@
 //
 // background player
 export default class Player {
-  //constructor() {
-  //  this.audio = new Audio();
-  //}
-
   setPlay() {
     this.audio = this.audio || new Audio();
 
