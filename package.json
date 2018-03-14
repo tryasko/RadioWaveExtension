@@ -1,0 +1,25 @@
+{
+  "name": "RadionWaveExtension",
+  "version": "2.1.0",
+  "description": "A simple Chrome extension what allows listen to online radios. Contains preset radio stations.",
+  "scripts": {
+    "start": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tryasko/RadioWaveExtension.git"
+  },
+  "author": "Ruslan Tryasko",
+  "license": "MIT",
+  "homepage": "https://github.com/tryasko/RadioWaveExtension#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11"
+  },
+  "dependencies": {
+    "preact": "^8.2.7"
+  }
+}
