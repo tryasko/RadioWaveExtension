@@ -1,4 +1,5 @@
 const path = require("path");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   watch: true,
@@ -10,9 +11,9 @@ module.exports = {
   },
 
   entry: {
-    popup: "./scripts/popup",
-    options: "./scripts/options",
-    background: "./scripts/background"
+    popup: "./source/popup",
+    options: "./source/options",
+    background: "./source/background"
   },
 
   output: {
@@ -30,5 +31,18 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+
+  plugins: [
+    new CopyWebpackPlugin([
+      { from: "source/manifest.json", to: "[name].[ext]" },
+
+      { from: "source/background.html", to: "[name].[ext]" },
+      { from: "source/options.html", to: "[name].[ext]" },
+      { from: "source/popup.html", to: "[name].[ext]" },
+
+      { from: "source/icons/", to: "icons/[name].[ext]" },
+      { from: "source/popup/img/", to: "popup/img/[name].[ext]" }
+    ])
+  ]
 };
