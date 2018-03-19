@@ -2,11 +2,15 @@ import "./index.css";
 import { h, Component } from "preact";
 
 import Navbar from "../navbar";
+import Stations from "../stations";
 
 export default class Router extends Component {
   constructor() {
     super();
-    this.state = { url: window.location.hash };
+
+    this.state = {
+      url: window.location.hash
+    };
   }
 
   componentDidMount() {
@@ -39,7 +43,7 @@ export default class Router extends Component {
       case "#stations":
         return {
           pageName: "stations",
-          pageElement: <h1>stations</h1>
+          pageElement: <Stations />
         };
 
       case "#settings":
