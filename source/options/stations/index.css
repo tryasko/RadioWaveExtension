@@ -1,0 +1,53 @@
+.list {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.list-group {
+  width: 600px;
+  padding: 0 10px;
+  margin: 40px auto;
+
+  padding: 14px 19px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.list-group-header {
+  height: 60px;
+  line-height: 60px;
+  display: flex;
+}
+
+.list-group-header-name {
+  flex: 1;
+  font-size: 30px;
+}
+
+.list-group-header-arrow {
+  width: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.list-group-header-arrow-image {
+  width: 16px;
+  height: 16px;
+}
+
+.station {
+  padding: 6px;
+  line-height: 20px;
+  display: block;
+  user-select: none;
+  border-top: 1px solid #dddddd;
+}
+
+.station:hover {
+  background-color: #f5f5f5;
+}
+
+.station-name {
+  margin-left: 30px;
+}
