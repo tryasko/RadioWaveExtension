@@ -1,13 +1,14 @@
 const path = require("path");
+const webpack = require("webpack");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   watch: true,
 
-  //devtool: "source-map",
+  devtool: "source-map",
 
   resolve: {
-    extensions: [".js"]
+    extensions: [".js", ".jsx"]
   },
 
   entry: {
@@ -24,7 +25,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         loader: "babel-loader",
         options: {
           plugins: [["transform-react-jsx", { pragma: "h" }]]
@@ -34,6 +35,11 @@ module.exports = {
   },
 
   plugins: [
+    //new webpack.ProvidePlugin({
+    //  h: "preact",
+    //  render: "preact"
+    //}),
+
     new CopyWebpackPlugin([
       { from: "source/manifest.json", to: "[name].[ext]" },
 
