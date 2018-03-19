@@ -1,6 +1,6 @@
 {
   "name": "RadionWaveExtension",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "A simple Chrome extension what allows listen to online radios. Contains preset radio stations.",
   "scripts": {
     "start": "webpack --config webpack.config.js"
