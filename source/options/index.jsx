@@ -1,4 +1,4 @@
-//import "./index.scss";
+import "./index.css";
 import { h, render } from "preact";
 
 import Router from "./router";

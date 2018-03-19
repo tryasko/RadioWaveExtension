@@ -8,7 +8,7 @@ module.exports = {
   devtool: "source-map",
 
   resolve: {
-    extensions: [".js", ".jsx"]
+    extensions: [".js", ".jsx", ".css"]
   },
 
   entry: {
@@ -30,6 +30,11 @@ module.exports = {
         options: {
           plugins: [["transform-react-jsx", { pragma: "h" }]]
         }
+      },
+
+      {
+        test: /\.css$/,
+        use: [{ loader: "style-loader" }, { loader: "css-loader" }]
       }
     ]
   },

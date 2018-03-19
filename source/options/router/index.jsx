@@ -1,5 +1,6 @@
-//import "./index.css";
+import "./index.css";
 import { h, Component } from "preact";
+
 import Navbar from "../navbar";
 
 export default class Router extends Component {

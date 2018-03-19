@@ -1,7 +1,7 @@
-//import "./index.scss";
+import "./index.css";
 import { h, Component } from "preact";
 
-export default class Navbsr extends Component {
+export default class Navbar extends Component {
   render() {
     const pageName = this.props.pageName;
 
