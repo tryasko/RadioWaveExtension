@@ -1,7 +1,6 @@
 import "./index.css";
 import { h, Component } from "preact";
 
-import Navbar from "../navbar";
 import Stations from "../stations";
 
 export default class Router extends Component {
@@ -18,13 +17,11 @@ export default class Router extends Component {
   }
 
   render() {
-    const { pageName, pageElement } = this.getPage(this.state.url);
+    const { pageElement } = this.getPage(this.state.url);
 
     return (
       <div className="Layout">
-        <div className="Header">
-          <Navbar pageName={pageName} />
-        </div>
+        <div className="Header" />
 
         <div className="Content">{pageElement}</div>
 
@@ -44,18 +41,6 @@ export default class Router extends Component {
         return {
           pageName: "stations",
           pageElement: <Stations />
-        };
-
-      case "#settings":
-        return {
-          pageName: "settings",
-          pageElement: <h1>settings</h1>
-        };
-
-      case "#about":
-        return {
-          pageName: "about",
-          pageElement: <h1>about</h1>
         };
 
       default:
