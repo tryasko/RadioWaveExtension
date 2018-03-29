@@ -3,7 +3,8 @@
   "version": "3.0.0",
   "description": "A simple Chrome extension what allows listen to online radios. Contains preset radio stations.",
   "scripts": {
-    "start": "webpack --config webpack.config.js"
+    "start": "webpack --config webpack.config.js --mode development",
+    "build": "webpack --config webpack.config.js --mode production"
   },
   "repository": {
     "type": "git",

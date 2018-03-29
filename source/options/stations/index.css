@@ -1,46 +1,21 @@
 .list {
-  height: 100%;
-  overflow-y: scroll;
-}
-
-.list-group {
   width: 600px;
-  padding: 0 10px;
-  margin: 40px auto;
-
-  padding: 14px 19px;
-  background-color: #fff;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 36px 16px;
   border: 1px solid #ddd;
   border-radius: 4px;
-}
-
-.list-group-header {
-  height: 60px;
-  line-height: 60px;
-  display: flex;
-}
-
-.list-group-header-name {
-  flex: 1;
-  font-size: 30px;
-}
-
-.list-group-header-arrow {
-  width: 40px;
-  text-align: center;
-  cursor: pointer;
-}
-
-.list-group-header-arrow-image {
-  width: 16px;
-  height: 16px;
+  overflow-y: scroll;
+  background-color: #fff;
 }
 
 .station {
   padding: 6px;
   line-height: 20px;
-  display: block;
+  display: flex;
   user-select: none;
+  cursor: pointer;
   border-top: 1px solid #dddddd;
 }
 
@@ -48,6 +23,27 @@
   background-color: #f5f5f5;
 }
 
+.station-group {
+  display: inline-block;
+  width: 30px;
+  margin: 0 20px;
+  font-size: 10px;
+  color: #888;
+}
+
 .station-name {
-  margin-left: 30px;
+  flex: 1;
+}
+
+.station-link {
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.station-link:hover {
+  text-decoration: underline;
+}
+
+.station-separator {
+  border-top: 1px solid #dddddd;
 }

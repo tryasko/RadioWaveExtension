@@ -13,32 +13,21 @@ export default class StationList extends Component {
   render() {
     return (
       <div className="list">
-        <div className="list-group">
-          {this.renderGropHeader()}
-          {this.state.stations.map(this.renderItem, this)}
-        </div>
+        {this.state.stations.map(this.renderItem, this)}
+        <div className="station-separator" />
       </div>
     );
   }
 
-  renderGropHeader() {
-    return (
-      <div className="list-group-header">
-        <div className="list-group-header-name">Group Name</div>
-
-        <div className="list-group-header-arrow" onClick={() => {}}>
-          <img className="list-group-header-arrow-image" alt={"alt"} src={"src"} />
-        </div>
-      </div>
-    );
-  }
-
-  renderItem({ name, group, favorite }) {
+  renderItem({ name, group, url, favorite }) {
     return (
       <label key={name + group} className="station">
         <input type="checkbox" checked={favorite} onChange={() => {}} />
         <span className="station-group">{group}</span>
         <span className="station-name">{name}</span>
+        <a className="station-link" target="_blank" href={url}>
+          link
+        </a>
       </label>
     );
   }
