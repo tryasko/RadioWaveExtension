@@ -1,25 +1,27 @@
+//
+// selected stations by default
 export default [
-  "https://www.kissfm.ua/",
-  "https://www.radioroks.ua/",
-  "http://mfm.ua/",
+  "http://online-kissfm.tavrmedia.ua/KissFM",
+  "http://online-radioroks.tavrmedia.ua/RadioROKS",
+  "http://radio.mfm.ua/online128",
 
-  "http://garagefm.ru/",
-  "http://www.energyfm.ru/",
-  "https://www.mixadance.fm/",
+  "http://91.213.196.100:8000/garagefm-192",
+  "http://ic4.101.ru:8000/v1_1",
+  "http://91.213.196.100:8000/mixadancefm-192",
 
-  "http://mjoy.ua/radio/rzk/",
-  "http://mjoy.ua/radio/urban-space-radio/",
-  "http://mjoy.ua/radio/kredens-cafe-radio/",
+  "http://mjoystream.westeurotele.com:8000/radio-z-kryjivky",
+  "http://mjoystream.westeurotele.com:8000/urban-space-radio",
+  "http://mjoystream.westeurotele.com:8000/radio-egoisty",
 
-  "http://promodj.com/radio#channel5",
-  "http://promodj.com/radio#toodeep",
-  "http://promodj.com/radio#pop",
+  "http://91.213.196.100:8000/channel5-192",
+  "http://91.213.196.100:8000/toodeep-192",
+  "http://91.213.196.100:8000/pop-192",
 
-  "http://www.radiorecord.ru/radio/stations/?st=rr",
-  "http://www.radiorecord.ru/radio/stations/?st=ps",
-  "http://www.radiorecord.ru/radio/stations/?st=mdl",
+  "http://air.radiorecord.ru:805/rr_320",
+  "http://air.radiorecord.ru:805/ps_320",
+  "http://air.radiorecord.ru:805/mdl_320",
 
-  "http://gaduradio.pl/play/127",
-  "http://gaduradio.pl/play/151",
-  "http://gaduradio.pl/play/82"
+  "http://stream.open.fm/127?type=.aac",
+  "http://stream.open.fm/151?type=.aac",
+  "http://stream.open.fm/82?type=.aac"
 ];
