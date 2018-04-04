@@ -1,5 +1,3 @@
-"use strict";
-
 //
 // background player
 export default class Player {

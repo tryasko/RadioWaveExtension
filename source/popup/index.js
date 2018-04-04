@@ -52,6 +52,7 @@ cnt_volume.addEventListener("mousewheel", e => {
   cnt_volume.value = db.volume;
 
   play_list.innerHTML = JSON.parse(localStorage.stations)
+    .filter(station => station.favorite)
     .map(({ name, group, stream }) => {
       return `<li class="${db.stream === stream ? "selected" : ""}" data-id="${stream}">
           <span class="group">${group}</span>
@@ -60,5 +61,9 @@ cnt_volume.addEventListener("mousewheel", e => {
     })
     .join("");
 
-  document.querySelector(".selected").scrollIntoView();
+  const active = document.querySelector(".selected");
+
+  if (active) {
+    active.scrollIntoView();
+  }
 })();
