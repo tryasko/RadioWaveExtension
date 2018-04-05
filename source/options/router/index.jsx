@@ -1,7 +1,7 @@
 import "./index.css";
 import { h, Component } from "preact";
 
-import Stations from "../stations";
+import Stations from "../stations/";
 
 export default class Router extends Component {
   constructor() {

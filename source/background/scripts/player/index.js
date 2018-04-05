@@ -3,10 +3,10 @@
 export default class Player {
   setPlay() {
     this.audio = this.audio || new Audio();
-
-    this.setVolume();
     this.audio.src = localStorage.stream;
     this.audio.play();
+
+    this.setVolume();
   }
 
   setStop() {
