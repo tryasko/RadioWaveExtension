@@ -17,6 +17,8 @@ export default class Player {
   }
 
   setVolume() {
-    this.audio.volume = localStorage.volume / 100;
+    if (this.audio) {
+      this.audio.volume = localStorage.volume / 100;
+    }
   }
 }
