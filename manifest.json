@@ -14,7 +14,7 @@
     "32": "icons/32.png",
     "64": "icons/64.png"
   },
-  "permissions": ["http://radiowave.in.ua/*"],
+  "permissions": ["http://radiowave.in.ua/api_v1/*"],
   "manifest_version": 2,
   "name": "Radio Wave",
   "version": "2.2.0"

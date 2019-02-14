@@ -32,7 +32,7 @@ play_list.addEventListener("click", e => {
 cnt_volume.addEventListener("input", e => {
   db.volume = e.target.value;
 
-  player.setVolume();
+  player.updateVolume();
 });
 
 cnt_volume.addEventListener("mousewheel", e => {
@@ -42,10 +42,9 @@ cnt_volume.addEventListener("mousewheel", e => {
   cnt_volume.value = volume;
   db.volume = volume;
 
-  player.setVolume();
+  player.updateVolume();
 });
 
-//
 // render station list
 (() => {
   cnt_play.setAttribute("class", db.state);
