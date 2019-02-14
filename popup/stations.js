@@ -2,174 +2,174 @@ window.stationList = [
   {
     name: "KissFM",
     group: "UA",
-    stream: "http://online-kissfm.tavrmedia.ua/KissFM"
+    stream: "group=ua&station=kissfm"
   },
 
   {
     name: "Radio ROKS",
     group: "UA",
-    stream: "http://online-radioroks.tavrmedia.ua/RadioROKS"
+    stream: "group=ua&station=radio_roks"
   },
 
   {
     name: "Radio Feel",
     group: "UA",
-    stream: "http://62.80.190.246:8000/Feel"
-  },
-
-  {
-    name: "Pirate Station",
-    group: "RCD",
-    stream: "http://air2.radiorecord.ru:805/ps_128"
-  },
-
-  {
-    name: "Radio Record",
-    group: "RCD",
-    stream: "http://air2.radiorecord.ru:805/rr_128"
+    stream: "group=ua&station=radio_feel"
   },
 
   {
     name: "NRJ",
     group: "RU",
-    stream: "http://ic4.101.ru:8000/v1_1"
+    stream: "group=ru&station=nrj"
+  },
+
+  {
+    name: "Radio Record",
+    group: "RCD",
+    stream: "group=rcd&station=radio_record"
+  },
+
+  {
+    name: "Pirate Station",
+    group: "RCD",
+    stream: "group=rcd&station=pirate_station"
   },
 
   {
     name: "TOP 100",
     group: "PDJ",
-    stream: "http://91.213.196.100:8000/top100-192"
+    stream: "group=pdj&station=top_100"
   },
 
   {
     name: "Channel 5",
     group: "PDJ",
-    stream: "http://91.213.196.100:8000/channel5-192"
+    stream: "group=pdj&station=channel_5"
   },
 
   {
     name: "GarageFM",
     group: "PDJ",
-    stream: "http://91.213.196.100:8000/garagefm-192"
+    stream: "group=pdj&station=garagefm"
   },
 
   {
     name: "Trap",
     group: "PDJ",
-    stream: "http://91.213.196.100:8000/trap-192"
+    stream: "group=pdj&station=trap"
   },
 
   {
     name: "Klubb",
     group: "PDJ",
-    stream: "http://91.213.196.100:8000/klubb-192"
+    stream: "group=pdj&station=klubb"
   },
 
   {
     name: "Dubstep",
     group: "PDJ",
-    stream: "http://91.213.196.100:8000/dubstep-192"
+    stream: "group=pdj&station=dubstep"
   },
 
   {
     name: "Nu",
     group: "PDJ",
-    stream: "http://91.213.196.100:8000/nu-192"
+    stream: "group=pdj&station=nu"
   },
 
   {
     name: "Too Nu",
     group: "PDJ",
-    stream: "http://91.213.196.100:8000/toonu-192"
+    stream: "group=pdj&station=too_nu"
   },
 
   {
     name: "Yo",
     group: "PDJ",
-    stream: "http://91.213.196.100:8000/yo-192"
+    stream: "group=pdj&station=yo"
   },
 
   {
     name: "Full Moon",
     group: "PDJ",
-    stream: "http://91.213.196.100:8000/fullmoon-192"
+    stream: "group=pdj&station=full_moon"
   },
 
   {
     name: "Vata",
     group: "PDJ",
-    stream: "http://91.213.196.100:8000/vata-192"
+    stream: "group=pdj&station=vata"
   },
 
   {
     name: "300kmh",
     group: "PDJ",
-    stream: "http://91.213.196.100:8000/300kmh-192"
+    stream: "group=pdj&station=300kmh"
   },
 
   {
     name: "186mph",
     group: "PDJ",
-    stream: "http://91.213.196.100:8000/186mph-192"
+    stream: "group=pdj&station=186mph"
   },
 
   {
     name: "Deep",
     group: "PDJ",
-    stream: "http://91.213.196.100:8000/deep-192"
+    stream: "group=pdj&station=deep"
   },
 
   {
     name: "Too Deep",
     group: "PDJ",
-    stream: "http://91.213.196.100:8000/toodeep-192"
+    stream: "group=pdj&station=too_deep"
   },
 
   {
     name: "Mini",
     group: "PDJ",
-    stream: "http://91.213.196.100:8000/mini-192"
+    stream: "group=pdj&station=mini"
   },
 
   {
     name: "Pop",
     group: "PDJ",
-    stream: "http://91.213.196.100:8000/pop-192"
+    stream: "group=pdj&station=pop"
   },
 
   {
     name: "Old-School",
     group: "PDJ",
-    stream: "http://91.213.196.100:8000/oldschool-192"
+    stream: "group=pdj&station=old-school"
   },
 
   {
     name: "Strange",
     group: "PDJ",
-    stream: "http://91.213.196.100:8000/strange-192"
+    stream: "group=pdj&station=strange"
   },
 
   {
     name: "Brainfck",
     group: "PDJ",
-    stream: "http://91.213.196.100:8000/brainfck-192"
+    stream: "group=pdj&station=brainfck"
   },
 
   {
     name: "Bobina",
     group: "PDJ",
-    stream: "http://91.213.196.100:8000/bobina-192"
+    stream: "group=pdj&station=bobina"
   },
 
   {
     name: "DJ GROOVE",
     group: "PDJ",
-    stream: "http://91.213.196.100:8000/groove-192"
+    stream: "group=pdj&station=dj_groove"
   },
 
   {
     name: "Mixadance FM",
     group: "PDJ",
-    stream: "http://91.213.196.100:8000/mixadancefm-192"
+    stream: "group=pdj&station=mixadance_fm"
   }
 ];
