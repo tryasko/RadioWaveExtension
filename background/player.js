@@ -10,7 +10,7 @@ window.player = new class {
 
   setPlay() {
     this.setVolume();
-    this.audio.src = this.storage.stream;
+    this.audio.src = `http://radiowave.in.ua/api_v1/stream.php?${this.storage.stream}`;
     this.audio.play();
   }
 
