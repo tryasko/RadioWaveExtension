@@ -1,16 +1,14 @@
 "use strict";
 
-//
-// background player
-window.player = new class {
-  constructor() {
-    this.audio = new Audio();
-    this.storage = localStorage;
-  }
+const STREAM_API_URL = "http://radiowave.in.ua/api_v1/stream";
+
+window.player = new class BackgroundPlayer {
+  audio = new Audio();
+  storage = localStorage;
 
   setPlay() {
-    this.setVolume();
-    this.audio.src = `http://radiowave.in.ua/api_v1/stream.php?${this.storage.stream}`;
+    this.updateVolume();
+    this.audio.src = `${STREAM_API_URL}?${this.storage.stream}`;
     this.audio.play();
   }
 
@@ -19,7 +17,7 @@ window.player = new class {
     this.audio.src = "";
   }
 
-  setVolume() {
+  updateVolume() {
     this.audio.volume = this.storage.volume / 100;
   }
 }();
