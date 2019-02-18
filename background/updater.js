@@ -11,7 +11,7 @@
     version: "2.2",
     volume: 30,
     state: "paused",
-    stream: "group=ua&station=kissfm"
+    stream: "group=tvr&station=kiss_fm_ua"
   };
 
   Object.keys(state).forEach(key => localStorage.setItem(key, state[key]));

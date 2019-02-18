@@ -1,26 +1,44 @@
 window.stationList = [
   {
-    name: "KissFM",
-    group: "UA",
-    stream: "group=ua&station=kissfm"
-  },
-
-  {
-    name: "Radio ROKS",
-    group: "UA",
-    stream: "group=ua&station=radio_roks"
-  },
-
-  {
     name: "Radio Feel",
     group: "UA",
     stream: "group=ua&station=radio_feel"
   },
 
   {
-    name: "NRJ",
-    group: "RU",
-    stream: "group=ru&station=nrj"
+    name: "Хіт FM",
+    group: "TVR",
+    stream: "group=tvr&station=hit_fm"
+  },
+
+  {
+    name: "Русское Радио UA",
+    group: "TVR",
+    stream: "group=tvr&station=rusradio_ua"
+  },
+
+  {
+    name: "Radio ROKS",
+    group: "TVR",
+    stream: "group=tvr&station=radio_roks"
+  },
+
+  {
+    name: "KISS FM UA",
+    group: "TVR",
+    stream: "group=tvr&station=kiss_fm_ua"
+  },
+
+  {
+    name: "Мелодія FM",
+    group: "TVR",
+    stream: "group=tvr&station=melodia_fm"
+  },
+
+  {
+    name: "Радіо Relax",
+    group: "TVR",
+    stream: "group=tvr&station=radio_relax"
   },
 
   {
@@ -33,6 +51,32 @@ window.stationList = [
     name: "Pirate Station",
     group: "RCD",
     stream: "group=rcd&station=pirate_station"
+  },
+
+  {
+    name: "Euro Hits",
+    group: "101",
+    stream: "group=101&station=euro_hits"
+  },
+  {
+    name: "Chillоut",
+    group: "101",
+    stream: "group=101&station=chillоut"
+  },
+  {
+    name: "Дискотека 80-х",
+    group: "101",
+    stream: "group=101&station=discoteka_80-x"
+  },
+  {
+    name: "Deep House",
+    group: "101",
+    stream: "group=101&station=deep_house"
+  },
+  {
+    name: "Russian Dance",
+    group: "101",
+    stream: "group=101&station=russian_dance"
   },
 
   {

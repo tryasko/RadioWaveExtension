@@ -1,6 +1,6 @@
 "use strict";
 
-const STREAM_API_URL = "http://radiowave.in.ua/api_v1/stream";
+const STREAM_API_URL = "http://radiowave.in.ua/api_v2.2/stream";
 
 window.backgroundPlayer = new class BackgroundPlayer {
   audio = new Audio();
