@@ -1,13 +1,13 @@
 "use strict";
 
-const STREAM_API_URL = "http://radiowave.in.ua/api_v2.2/stream";
+const STREAM_API_URL = "http://radiowave.in.ua/api_v2.0/stream";
 
 window.backgroundPlayer = new class BackgroundPlayer {
   audio = new Audio();
 
   play() {
     this.volume();
-    this.audio.src = `${STREAM_API_URL}?${localStorage.stream}`;
+    this.audio.src = `${STREAM_API_URL}?${localStorage.stream}&v=2.2.0`;
     this.audio.play();
     localStorage.setItem("state", "played");
   }
