@@ -2,22 +2,23 @@
 
 const STREAM_API_URL = "http://radiowave.in.ua/api_v1/stream";
 
-window.player = new class BackgroundPlayer {
+window.backgroundPlayer = new class BackgroundPlayer {
   audio = new Audio();
-  storage = localStorage;
 
-  setPlay() {
-    this.updateVolume();
-    this.audio.src = `${STREAM_API_URL}?${this.storage.stream}`;
+  play() {
+    this.volume();
+    this.audio.src = `${STREAM_API_URL}?${localStorage.stream}`;
     this.audio.play();
+    localStorage.setItem("state", "played");
   }
 
-  setStop() {
+  stop() {
     this.audio.pause();
-    this.audio.src = "";
+    this.audio.src = null;
+    localStorage.setItem("state", "paused");
   }
 
-  updateVolume() {
-    this.audio.volume = this.storage.volume / 100;
+  volume() {
+    this.audio.volume = localStorage.volume / 100;
   }
 }();

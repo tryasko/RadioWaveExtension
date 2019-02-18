@@ -1,63 +1,70 @@
 "use strict";
 
-const db = localStorage;
-const player = chrome.extension.getBackgroundPage().player;
+const backgroundPlayer = chrome.extension.getBackgroundPage().backgroundPlayer;
 
-cnt_play.addEventListener("click", () => {
-  if (db.state === "stopped") {
-    cnt_play.setAttribute("class", "played");
-    db.setItem("state", "played");
-    player.setPlay();
+const controlPlay = document.getElementById("cnt_play");
+const controlVolume = document.getElementById("cnt_volume");
+const playList = document.getElementById("play_list");
+
+// Play/Pause control
+controlPlay.addEventListener("click", () => {
+  if (localStorage.state === "paused") {
+    backgroundPlayer.play();
   } else {
-    cnt_play.setAttribute("class", "stopped");
-    db.setItem("state", "stopped");
-    player.setStop();
+    backgroundPlayer.stop();
   }
+
+  controlPlay.setAttribute("class", localStorage.state);
 });
 
-play_list.addEventListener("click", e => {
-  const element = e.target.closest("li");
+// Volume control
+controlVolume.addEventListener("input", event => {
+  localStorage.volume = event.target.value;
 
-  document.querySelector("#play_list .selected").setAttribute("class", "");
-
-  element.setAttribute("class", "selected");
-  cnt_play.setAttribute("class", "played");
-
-  db.state = "played";
-  db.stream = element.getAttribute("data-id");
-
-  player.setPlay();
+  backgroundPlayer.volume();
 });
 
-cnt_volume.addEventListener("input", e => {
-  db.volume = e.target.value;
-
-  player.updateVolume();
-});
-
-cnt_volume.addEventListener("mousewheel", e => {
-  const value = +db.volume + e.wheelDelta / 24;
+controlVolume.addEventListener("mousewheel", e => {
+  const value = +localStorage.volume + e.wheelDelta / 24;
   const volume = value < 0 ? 0 : value > 100 ? 100 : value;
 
-  cnt_volume.value = volume;
-  db.volume = volume;
+  controlVolume.value = volume;
+  localStorage.volume = volume;
 
-  player.updateVolume();
+  backgroundPlayer.volume();
 });
 
-// render station list
-(() => {
-  cnt_play.setAttribute("class", db.state);
-  cnt_volume.value = db.volume;
+// List control
+playList.addEventListener("click", event => {
+  const element = event.target.closest("li");
 
-  play_list.innerHTML = window.stationList
+  if (document.querySelector(".selected")) {
+    document.querySelector(".selected").setAttribute("class", "");
+  }
+
+  element.setAttribute("class", "selected");
+  controlPlay.setAttribute("class", "played");
+
+  localStorage.stream = element.getAttribute("data-id");
+
+  backgroundPlayer.play();
+});
+
+// Render station list
+(() => {
+  controlPlay.setAttribute("class", localStorage.state);
+  controlVolume.value = localStorage.volume;
+
+  playList.innerHTML = window.stationList
     .map(({ name, group, stream }) => {
-      return `<li class="${db.stream === stream ? "selected" : ""}" data-id="${stream}">
+      return `<li class="${localStorage.stream === stream ? "selected" : ""}" data-id="${stream}">
           <span class="group">${group}</span>
           <span class="name">${name}</span>
         </li>`;
     })
     .join("");
 
-  document.querySelector(".selected").scrollIntoView();
+  if (document.querySelector(".selected")) {
+    document.querySelector(".selected").scrollIntoView();
+  }
 })();
