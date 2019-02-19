@@ -2,17 +2,16 @@
 
 (() => {
   if (localStorage.getItem("version") === "2.2.0") {
-    return;
+    return localStorage.setItem("state", "paused");
   }
-
-  localStorage.clear();
 
   const state = {
     version: "2.2.0",
     volume: 30,
-    state: "paused",
-    stream: "g=tvr&s=kiss_fm_ua"
+    state: "paused"
   };
+
+  localStorage.clear();
 
   Object.keys(state).forEach(key => localStorage.setItem(key, state[key]));
 })();
