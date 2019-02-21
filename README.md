@@ -59,7 +59,7 @@ Some popular stations:
 - [Radio Record](http://www.radiorecord.ru/)
 - [GarageFM](http://garagefm.ru/)
 - [Channel 5](http://promodj.com/radio#channel5)
-- Radio Feel
+- [Euro Hits](http://101.ru/radio/channel/82)
 
 ## License
 
