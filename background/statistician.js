@@ -5,6 +5,10 @@ window.statistician = new class Statistician {
   API_URL = "http://radiowave.in.ua/api/2.0/stats";
 
   constructor() {
+    this.start = this.start.bind(this);
+    this.restart = this.restart.bind(this);
+    this.sendStat = this.sendStat.bind(this);
+
     this.sendStat();
   }
 
@@ -22,7 +26,7 @@ window.statistician = new class Statistician {
     const { stream, state, volume, version } = localStorage;
 
     try {
-      await fetch(`${this.API_URL}?${stream}&state=${state}&volume=${volume}&version=${version}`);
+      await fetch(`${this.API_URL}?${stream}&state=${state}&volume=${parseInt(volume)}&version=${version}`);
     } catch (error) {
       console.warn(error);
     }

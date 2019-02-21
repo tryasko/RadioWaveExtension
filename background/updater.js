@@ -8,7 +8,8 @@
   const state = {
     version: "2.2.0",
     volume: 30,
-    state: "paused"
+    state: "paused",
+    stream: "station=tvr.kiss_fm_ua"
   };
 
   localStorage.clear();

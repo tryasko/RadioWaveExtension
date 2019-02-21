@@ -1,219 +1,213 @@
 window.stationList = [
   {
-    name: "Radio Feel",
-    group: "UA",
-    stream: "group=ua&station=radio_feel"
-  },
-
-  {
     name: "Хіт FM",
     group: "TVR",
-    stream: "group=tvr&station=hit_fm"
+    stream: "station=tvr.hit_fm"
   },
 
   {
     name: "Русское Радио UA",
     group: "TVR",
-    stream: "group=tvr&station=rusradio_ua"
+    stream: "station=tvr.rusradio_ua"
   },
 
   {
     name: "Radio ROKS",
     group: "TVR",
-    stream: "group=tvr&station=radio_roks"
+    stream: "station=tvr.radio_roks"
   },
 
   {
     name: "KISS FM UA",
     group: "TVR",
-    stream: "group=tvr&station=kiss_fm_ua"
+    stream: "station=tvr.kiss_fm_ua"
   },
 
   {
     name: "Мелодія FM",
     group: "TVR",
-    stream: "group=tvr&station=melodia_fm"
+    stream: "station=tvr.melodia_fm"
   },
 
   {
     name: "Радіо Relax",
     group: "TVR",
-    stream: "group=tvr&station=radio_relax"
+    stream: "station=tvr.radio_relax"
   },
 
   {
     name: "Radio Record",
     group: "RCD",
-    stream: "group=rcd&station=radio_record"
+    stream: "station=rcd.radio_record"
   },
 
   {
     name: "Pirate Station",
     group: "RCD",
-    stream: "group=rcd&station=pirate_station"
+    stream: "station=rcd.pirate_station"
   },
 
   {
     name: "Euro Hits",
     group: "101",
-    stream: "group=101&station=euro_hits"
+    stream: "station=101.euro_hits"
   },
   {
     name: "Chillout",
     group: "101",
-    stream: "group=101&station=chillout"
+    stream: "station=101.chillout"
   },
   {
     name: "Дискотека 80-х",
     group: "101",
-    stream: "group=101&station=discoteka_80-x"
+    stream: "station=101.discoteka_80-x"
   },
   {
     name: "Deep House",
     group: "101",
-    stream: "group=101&station=deep_house"
+    stream: "station=101.deep_house"
   },
   {
     name: "Russian Dance",
     group: "101",
-    stream: "group=101&station=russian_dance"
+    stream: "station=101.russian_dance"
   },
 
   {
     name: "TOP 100",
     group: "PDJ",
-    stream: "group=pdj&station=top_100"
+    stream: "station=pdj.top_100"
   },
 
   {
     name: "Channel 5",
     group: "PDJ",
-    stream: "group=pdj&station=channel_5"
+    stream: "station=pdj.channel_5"
   },
 
   {
     name: "GarageFM",
     group: "PDJ",
-    stream: "group=pdj&station=garagefm"
+    stream: "station=pdj.garagefm"
   },
 
   {
     name: "Trap",
     group: "PDJ",
-    stream: "group=pdj&station=trap"
+    stream: "station=pdj.trap"
   },
 
   {
     name: "Klubb",
     group: "PDJ",
-    stream: "group=pdj&station=klubb"
+    stream: "station=pdj.klubb"
   },
 
   {
     name: "Dubstep",
     group: "PDJ",
-    stream: "group=pdj&station=dubstep"
+    stream: "station=pdj.dubstep"
   },
 
   {
     name: "Nu",
     group: "PDJ",
-    stream: "group=pdj&station=nu"
+    stream: "station=pdj.nu"
   },
 
   {
     name: "Too Nu",
     group: "PDJ",
-    stream: "group=pdj&station=too_nu"
+    stream: "station=pdj.too_nu"
   },
 
   {
     name: "Yo",
     group: "PDJ",
-    stream: "group=pdj&station=yo"
+    stream: "station=pdj.yo"
   },
 
   {
     name: "Full Moon",
     group: "PDJ",
-    stream: "group=pdj&station=full_moon"
+    stream: "station=pdj.full_moon"
   },
 
   {
     name: "Vata",
     group: "PDJ",
-    stream: "group=pdj&station=vata"
+    stream: "station=pdj.vata"
   },
 
   {
     name: "300kmh",
     group: "PDJ",
-    stream: "group=pdj&station=300kmh"
+    stream: "station=pdj.300kmh"
   },
 
   {
     name: "186mph",
     group: "PDJ",
-    stream: "group=pdj&station=186mph"
+    stream: "station=pdj.186mph"
   },
 
   {
     name: "Deep",
     group: "PDJ",
-    stream: "group=pdj&station=deep"
+    stream: "station=pdj.deep"
   },
 
   {
     name: "Too Deep",
     group: "PDJ",
-    stream: "group=pdj&station=too_deep"
+    stream: "station=pdj.too_deep"
   },
 
   {
     name: "Mini",
     group: "PDJ",
-    stream: "group=pdj&station=mini"
+    stream: "station=pdj.mini"
   },
 
   {
     name: "Pop",
     group: "PDJ",
-    stream: "group=pdj&station=pop"
+    stream: "station=pdj.pop"
   },
 
   {
     name: "Old-School",
     group: "PDJ",
-    stream: "group=pdj&station=old-school"
+    stream: "station=pdj.old-school"
   },
 
   {
     name: "Strange",
     group: "PDJ",
-    stream: "group=pdj&station=strange"
+    stream: "station=pdj.strange"
   },
 
   {
     name: "Brainfck",
     group: "PDJ",
-    stream: "group=pdj&station=brainfck"
+    stream: "station=pdj.brainfck"
   },
 
   {
     name: "Bobina",
     group: "PDJ",
-    stream: "group=pdj&station=bobina"
+    stream: "station=pdj.bobina"
   },
 
   {
     name: "DJ GROOVE",
     group: "PDJ",
-    stream: "group=pdj&station=dj_groove"
+    stream: "station=pdj.dj_groove"
   },
 
   {
     name: "Mixadance FM",
     group: "PDJ",
-    stream: "group=pdj&station=mixadance_fm"
+    stream: "station=pdj.mixadance_fm"
   }
 ];
