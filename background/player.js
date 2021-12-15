@@ -1,17 +1,18 @@
 "use strict";
 
-const STREAM_API_URL = "http://radiowave.in.ua/api/2.0/stream";
+const ENGINE = "engine=chrome-extension";
+const VERSION = `version=${localStorage.version}`;
+const STREAM_API_URL = "https://europe-central2-radio--wave.cloudfunctions.net/getStationURL";
 
 window.backgroundPlayer = new class BackgroundPlayer {
   audio = new Audio();
 
   play() {
     this.volume();
-    this.audio.src = `${STREAM_API_URL}?${localStorage.stream}`;
+    this.audio.src = `${STREAM_API_URL}?${localStorage.stream}&${ENGINE}&${VERSION}`;
     this.audio.play();
 
     localStorage.setItem("state", "played");
-    this._sendStat();
   }
 
   stop() {
@@ -19,16 +20,9 @@ window.backgroundPlayer = new class BackgroundPlayer {
     this.audio.src = "";
 
     localStorage.setItem("state", "paused");
-    this._sendStat();
   }
 
   volume() {
     this.audio.volume = localStorage.volume / 100;
-  }
-
-  _sendStat() {
-    if (window.statistician) {
-      window.statistician.sendStat();
-    }
   }
 }();

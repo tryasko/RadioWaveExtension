@@ -14,8 +14,8 @@
     "32": "icons/32.png",
     "64": "icons/64.png"
   },
-  "permissions": ["http://radiowave.in.ua/api/*"],
+  "permissions": ["https://europe-central2-radio--wave.cloudfunctions.net/*"],
   "manifest_version": 2,
   "name": "Radio Wave",
-  "version": "2.2.0"
+  "version": "2.2.1"
 }
