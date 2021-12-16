@@ -1,5 +1,11 @@
 window.stationList = [
   {
+    name: "MFM",
+    group: "UA",
+    stream: "station=ua.mfm"
+  },
+
+  {
     name: "Хіт FM",
     group: "TVR",
     stream: "station=tvr.hit_fm"
@@ -36,41 +42,15 @@ window.stationList = [
   },
 
   {
-    name: "Radio Record",
-    group: "RCD",
-    stream: "station=rcd.radio_record"
+    name: "Наше Радіо",
+    group: "TVR",
+    stream: "station=tvr.nasheradio"
   },
 
   {
-    name: "Pirate Station",
-    group: "RCD",
-    stream: "station=rcd.pirate_station"
-  },
-
-  {
-    name: "Euro Hits",
-    group: "101",
-    stream: "station=101.euro_hits"
-  },
-  {
-    name: "Chillout",
-    group: "101",
-    stream: "station=101.chillout"
-  },
-  {
-    name: "Дискотека 80-х",
-    group: "101",
-    stream: "station=101.discoteka_80-x"
-  },
-  {
-    name: "Deep House",
-    group: "101",
-    stream: "station=101.deep_house"
-  },
-  {
-    name: "Russian Dance",
-    group: "101",
-    stream: "station=101.russian_dance"
+    name: "Radio Jazz",
+    group: "TVR",
+    stream: "station=tvr.radiojazz"
   },
 
   {
