@@ -1,17 +1,19 @@
 "use strict";
 
 (() => {
-  const { version, volume } = localStorage;
+  const { version, volume, stream } = localStorage;
 
-  if (version === "2.2.1") {
+  if (version === "2.2.2") {
     return localStorage.setItem("state", "paused");
   }
 
+  const isCurrentStreamPresent = window.stationList.filter(station => station.stream === stream);
+
   const state = {
-    version: "2.2.1",
-    volume: volume,
+    version: "2.2.2",
+    volume: volume || 30,
     state: "paused",
-    stream: "station=ua.mfm"
+    stream: isCurrentStreamPresent.length ? stream : "station=ua.mfm"
   };
 
   localStorage.clear();

@@ -11,7 +11,7 @@
 </h4>
 
 <h5 align="center" fontSize="12px">
-  v2.2.0
+  v2.2.2
 </h5>
 
 <p align="center">
@@ -53,13 +53,11 @@ Station list you can see in source file. [popup/stations.js](https://raw.githubu
 
 Some popular stations:
 
+- [MFM](https://mfm.ua/)
 - [KissFM UA](https://www.kissfm.ua/)
 - [Radio ROKS](https://www.radioroks.ua/)
-- [Pirate Station](http://www.radiorecord.ru/ps/)
-- [Radio Record](http://www.radiorecord.ru/)
-- [GarageFM](http://garagefm.ru/)
-- [Channel 5](http://promodj.com/radio#channel5)
-- [Euro Hits](http://101.ru/radio/channel/82)
+- [GarageFM](https://garagefm.ru/)
+- [Channel 5](https://promodj.com/radio#channel5)
 
 ## License
 

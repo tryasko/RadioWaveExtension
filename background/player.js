@@ -1,15 +1,15 @@
 "use strict";
 
-const ENGINE = "engine=chrome-extension";
+const STREAM_API_URL = "https://europe-central2-radio--wave.cloudfunctions.net/getstream";
 const VERSION = `version=${localStorage.version}`;
-const STREAM_API_URL = "https://europe-central2-radio--wave.cloudfunctions.net/getStationURL";
+const CLIENT = "client=chrome-extension";
 
 window.backgroundPlayer = new class BackgroundPlayer {
   audio = new Audio();
 
   play() {
     this.volume();
-    this.audio.src = `${STREAM_API_URL}?${localStorage.stream}&${ENGINE}&${VERSION}`;
+    this.audio.src = `${STREAM_API_URL}?${localStorage.stream}&${CLIENT}&${VERSION}`;
     this.audio.play();
 
     localStorage.setItem("state", "played");
