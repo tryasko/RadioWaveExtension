@@ -45,7 +45,7 @@ playList.addEventListener("click", event => {
   element.setAttribute("class", "selected");
   controlPlay.setAttribute("class", "played");
 
-  localStorage.stream = element.getAttribute("data-id");
+  localStorage.station = element.getAttribute("data-id");
 
   backgroundPlayer.play();
 });
@@ -56,8 +56,8 @@ playList.addEventListener("click", event => {
   controlVolume.value = localStorage.volume;
 
   playList.innerHTML = window.stationList
-    .map(({ name, group, stream }) => {
-      return `<li class="${localStorage.stream === stream ? "selected" : ""}" data-id="${stream}">
+    .map(({ name, group, station }) => {
+      return `<li class="${localStorage.station === station ? "selected" : ""}" data-id="${station}">
           <span class="group">${group}</span>
           <span class="name">${name}</span>
         </li>`;

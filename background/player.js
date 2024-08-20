@@ -9,7 +9,7 @@ window.backgroundPlayer = new class BackgroundPlayer {
 
   play() {
     this.volume();
-    this.audio.src = `${STREAM_API_URL}?${localStorage.stream}&${CLIENT}&${VERSION}`;
+    this.audio.src = `${STREAM_API_URL}?station=${localStorage.station}&${CLIENT}&${VERSION}`;
     this.audio.play();
 
     localStorage.setItem("state", "played");

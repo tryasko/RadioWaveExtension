@@ -17,5 +17,5 @@
   "permissions": ["https://europe-central2-radio--wave.cloudfunctions.net/*"],
   "manifest_version": 2,
   "name": "Radio Wave",
-  "version": "2.2.2"
+  "version": "2.2.5"
 }
