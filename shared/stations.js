@@ -12,12 +12,6 @@ window.stationList = [
   },
 
   {
-    name: "Русское Радио UA",
-    group: "TVR",
-    station: "tvr.rusradio_ua"
-  },
-
-  {
     name: "Radio ROKS",
     group: "TVR",
     station: "tvr.radio_roks"
