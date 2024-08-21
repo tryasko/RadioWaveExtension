@@ -1,6 +1,6 @@
 "use strict";
 
-const STREAM_API_URL = "https://europe-central2-radio--wave.cloudfunctions.net/getstream";
+const STREAM_API_URL = "https://europe-southwest1-radio--wave.cloudfunctions.net/getstream-v2";
 const VERSION = `version=${localStorage.version}`;
 const CLIENT = "client=chrome-extension";
 

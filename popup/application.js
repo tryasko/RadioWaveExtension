@@ -1,5 +1,7 @@
 "use strict";
 
+const getStationId = (group, station) => `${group}.${station}`;
+
 const backgroundPlayer = chrome.extension.getBackgroundPage().backgroundPlayer;
 
 const controlPlay = document.getElementById("cnt_play");
@@ -57,7 +59,9 @@ playList.addEventListener("click", event => {
 
   playList.innerHTML = window.stationList
     .map(({ name, group, station }) => {
-      return `<li class="${localStorage.station === station ? "selected" : ""}" data-id="${station}">
+      const stationId = getStationId(group, station);
+
+      return `<li class="${localStorage.station === stationId ? "selected" : ""}" data-id="${stationId}">
           <span class="group">${group}</span>
           <span class="name">${name}</span>
         </li>`;

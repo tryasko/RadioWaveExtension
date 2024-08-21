@@ -2,48 +2,60 @@ window.stationList = [
   {
     name: "MFM",
     group: "UA",
-    station: "ua.mfm"
+    station: "mfm"
   },
 
   {
-    name: "Хіт FM",
+    name: "ХІТ FM",
     group: "TVR",
-    station: "tvr.hit_fm"
+    station: "HitFM"
   },
 
   {
     name: "Radio ROKS",
     group: "TVR",
-    station: "tvr.radio_roks"
+    station: "RadioROKS"
   },
 
   {
-    name: "KISS FM UA",
+    name: "KISSFM UA",
     group: "TVR",
-    station: "tvr.kiss_fm_ua"
+    station: "KissFM"
   },
 
   {
     name: "Мелодія FM",
     group: "TVR",
-    station: "tvr.melodia_fm"
+    station: "MelodiaFM"
   },
 
   {
     name: "Радіо Relax",
     group: "TVR",
-    station: "tvr.radio_relax"
+    station: "RadioRelax"
   },
 
   {
     name: "Наше Радіо",
     group: "TVR",
-    station: "tvr.nasheradio"
+    station: "NasheRadio"
   },
 
   {
     name: "Radio Jazz",
     group: "TVR",
-    station: "tvr.radiojazz"
+    station: "RadioJazz"
+  },
+
+  {
+    name: "Classic Radio",
+    group: "TVR",
+    station: "ClassicRadio"
+  },
+
+  {
+    name: "Радіо БАЙРАКТАР",
+    group: "TVR",
+    station: "RadioBayraktar"
   }
 ];
