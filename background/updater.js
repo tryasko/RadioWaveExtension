@@ -5,7 +5,7 @@ const currentVersion = "2.2.9";
 (() => {
   const { volume, station, version } = localStorage;
 
-  if (currentVersion > version) {
+  if (!version || version !== currentVersion) {
     const isCurrentStationExist = window.stationList.some(item => station === `${item.group}.${item.station}`);
 
     const state = {
