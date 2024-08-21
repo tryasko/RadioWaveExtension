@@ -1,5 +1,7 @@
 "use strict";
 
+const getStationId = (group, station) => `${group}.${station}`;
+
 const backgroundPlayer = chrome.extension.getBackgroundPage().backgroundPlayer;
 
 const controlPlay = document.getElementById("cnt_play");
@@ -45,7 +47,7 @@ playList.addEventListener("click", event => {
   element.setAttribute("class", "selected");
   controlPlay.setAttribute("class", "played");
 
-  localStorage.stream = element.getAttribute("data-id");
+  localStorage.station = element.getAttribute("data-id");
 
   backgroundPlayer.play();
 });
@@ -56,8 +58,10 @@ playList.addEventListener("click", event => {
   controlVolume.value = localStorage.volume;
 
   playList.innerHTML = window.stationList
-    .map(({ name, group, stream }) => {
-      return `<li class="${localStorage.stream === stream ? "selected" : ""}" data-id="${stream}">
+    .map(({ name, group, station }) => {
+      const stationId = getStationId(group, station);
+
+      return `<li class="${localStorage.station === stationId ? "selected" : ""}" data-id="${stationId}">
           <span class="group">${group}</span>
           <span class="name">${name}</span>
         </li>`;

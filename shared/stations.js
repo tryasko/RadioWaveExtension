@@ -2,192 +2,60 @@ window.stationList = [
   {
     name: "MFM",
     group: "UA",
-    stream: "station=ua.mfm"
+    station: "mfm"
   },
 
   {
-    name: "Хіт FM",
+    name: "ХІТ FM",
     group: "TVR",
-    stream: "station=tvr.hit_fm"
-  },
-
-  {
-    name: "Русское Радио UA",
-    group: "TVR",
-    stream: "station=tvr.rusradio_ua"
+    station: "HitFM"
   },
 
   {
     name: "Radio ROKS",
     group: "TVR",
-    stream: "station=tvr.radio_roks"
+    station: "RadioROKS"
   },
 
   {
-    name: "KISS FM UA",
+    name: "KISSFM UA",
     group: "TVR",
-    stream: "station=tvr.kiss_fm_ua"
+    station: "KissFM"
   },
 
   {
     name: "Мелодія FM",
     group: "TVR",
-    stream: "station=tvr.melodia_fm"
+    station: "MelodiaFM"
   },
 
   {
     name: "Радіо Relax",
     group: "TVR",
-    stream: "station=tvr.radio_relax"
+    station: "RadioRelax"
   },
 
   {
     name: "Наше Радіо",
     group: "TVR",
-    stream: "station=tvr.nasheradio"
+    station: "NasheRadio"
   },
 
   {
     name: "Radio Jazz",
     group: "TVR",
-    stream: "station=tvr.radiojazz"
+    station: "RadioJazz"
   },
 
   {
-    name: "TOP 100",
-    group: "PDJ",
-    stream: "station=pdj.top_100"
+    name: "Classic Radio",
+    group: "TVR",
+    station: "ClassicRadio"
   },
 
   {
-    name: "Channel 5",
-    group: "PDJ",
-    stream: "station=pdj.channel_5"
-  },
-
-  {
-    name: "GarageFM",
-    group: "PDJ",
-    stream: "station=pdj.garagefm"
-  },
-
-  {
-    name: "Trap",
-    group: "PDJ",
-    stream: "station=pdj.trap"
-  },
-
-  {
-    name: "Klubb",
-    group: "PDJ",
-    stream: "station=pdj.klubb"
-  },
-
-  {
-    name: "Dubstep",
-    group: "PDJ",
-    stream: "station=pdj.dubstep"
-  },
-
-  {
-    name: "Nu",
-    group: "PDJ",
-    stream: "station=pdj.nu"
-  },
-
-  {
-    name: "Too Nu",
-    group: "PDJ",
-    stream: "station=pdj.too_nu"
-  },
-
-  {
-    name: "Yo",
-    group: "PDJ",
-    stream: "station=pdj.yo"
-  },
-
-  {
-    name: "Full Moon",
-    group: "PDJ",
-    stream: "station=pdj.full_moon"
-  },
-
-  {
-    name: "Vata",
-    group: "PDJ",
-    stream: "station=pdj.vata"
-  },
-
-  {
-    name: "300kmh",
-    group: "PDJ",
-    stream: "station=pdj.300kmh"
-  },
-
-  {
-    name: "186mph",
-    group: "PDJ",
-    stream: "station=pdj.186mph"
-  },
-
-  {
-    name: "Deep",
-    group: "PDJ",
-    stream: "station=pdj.deep"
-  },
-
-  {
-    name: "Too Deep",
-    group: "PDJ",
-    stream: "station=pdj.too_deep"
-  },
-
-  {
-    name: "Mini",
-    group: "PDJ",
-    stream: "station=pdj.mini"
-  },
-
-  {
-    name: "Pop",
-    group: "PDJ",
-    stream: "station=pdj.pop"
-  },
-
-  {
-    name: "Old-School",
-    group: "PDJ",
-    stream: "station=pdj.old-school"
-  },
-
-  {
-    name: "Strange",
-    group: "PDJ",
-    stream: "station=pdj.strange"
-  },
-
-  {
-    name: "Brainfck",
-    group: "PDJ",
-    stream: "station=pdj.brainfck"
-  },
-
-  {
-    name: "Bobina",
-    group: "PDJ",
-    stream: "station=pdj.bobina"
-  },
-
-  {
-    name: "DJ GROOVE",
-    group: "PDJ",
-    stream: "station=pdj.dj_groove"
-  },
-
-  {
-    name: "Mixadance FM",
-    group: "PDJ",
-    stream: "station=pdj.mixadance_fm"
+    name: "Радіо БАЙРАКТАР",
+    group: "TVR",
+    station: "RadioBayraktar"
   }
 ];
