@@ -22,7 +22,7 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/tryasko/files/master/RadioWaveExtension/2.1.0/rw-popup.png" alt="Radio Wave Popup">
+  <img src="https://raw.githubusercontent.com/tryasko/RadioWaveExtension/cover.png" alt="Radio Wave Popup">
 </p>
 
 ## Install from Store
@@ -49,15 +49,15 @@ Congrats! Enjoy the radios.
 
 ## Station List
 
-Station list you can see in source file. [popup/stations.js](https://raw.githubusercontent.com/tryasko/RadioWaveExtension/master/popup/stations.js)
+Station list you can see in source file. [shared/stations.js](https://raw.githubusercontent.com/tryasko/RadioWaveExtension/master/popup/stations.js)
 
 Some popular stations:
 
 - [MFM](https://mfm.ua/)
 - [KissFM UA](https://www.kissfm.ua/)
 - [Radio ROKS](https://www.radioroks.ua/)
-- [GarageFM](https://garagefm.ru/)
-- [Channel 5](https://promodj.com/radio#channel5)
+- [Radio Relax](https://www.radiorelax.ua/)
+- [Radio Jazz](https://www.radiojazz.ua/)
 
 ## License
 
