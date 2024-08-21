@@ -22,7 +22,7 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/tryasko/RadioWaveExtension/cover.png" alt="Radio Wave Popup">
+  <img src="https://raw.githubusercontent.com/tryasko/RadioWaveExtension/master/cover.png" alt="Radio Wave Popup">
 </p>
 
 ## Install from Store
