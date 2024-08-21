@@ -49,7 +49,7 @@ Congrats! Enjoy the radios.
 
 ## Station List
 
-Station list you can see in source file. [shared/stations.js](https://raw.githubusercontent.com/tryasko/RadioWaveExtension/master/popup/stations.js)
+Station list you can see in source file. [shared/stations.js](https://raw.githubusercontent.com/tryasko/RadioWaveExtension/master/shared/stations.js)
 
 Some popular stations:
 
