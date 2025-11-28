@@ -1,4 +1,4 @@
-window.stationList = [
+const stationList = [
   {
     name: "MFM",
     group: "UA",
@@ -59,3 +59,10 @@ window.stationList = [
     station: "RadioBayraktar"
   }
 ];
+
+// Support both window context (popup/offscreen) and service worker (self)
+if (typeof window !== 'undefined') {
+  window.stationList = stationList;
+} else if (typeof self !== 'undefined') {
+  self.stationList = stationList;
+}
