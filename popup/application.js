@@ -10,8 +10,7 @@ let currentState = { state: "paused", volume: 30, station: "TVR.KissFM" };
 
 // Initialize popup with current state
 async function initializePopup() {
-  const state = await chrome.runtime.sendMessage({ type: 'GET_STATE' });
-  currentState = state;
+  currentState = await chrome.runtime.sendMessage({ type: 'GET_STATE' });
 
   controlPlay.setAttribute("class", currentState.state);
   controlVolume.value = currentState.volume;
