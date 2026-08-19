@@ -1,12 +1,14 @@
 "use strict";
 
+import stationList from "../shared/stations.json" with { type: "json" };
+
 const currentVersion = "2.2.9";
 
-(() => {
+export const stateReady = (async () => {
   const { volume, station, version } = localStorage;
 
   if (!version || version !== currentVersion) {
-    const isCurrentStationExist = window.stationList.some(item => station === `${item.group}.${item.station}`);
+    const isCurrentStationExist = stationList.some(item => station === `${item.group}.${item.station}`);
 
     const state = {
       version: currentVersion,
