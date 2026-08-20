@@ -1,3 +1,6 @@
 # IDE's configuration files
 .idea/
 .vscode/
+
+# macOS metadata
+.DS_Store
