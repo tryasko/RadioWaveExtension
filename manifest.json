@@ -1,9 +1,10 @@
 {
-  "background": {
-    "page": "background/index.html"
-  },
-  "browser_action": {
+  "action": {
     "default_popup": "popup/index.html"
+  },
+  "background": {
+    "service_worker": "background/service-worker.js",
+    "type": "module"
   },
   "description": "A simple application for listening to online radio.",
   "icons": {
@@ -14,8 +15,10 @@
     "32": "icons/32.png",
     "64": "icons/64.png"
   },
-  "permissions": ["https://europe-southwest1-radio--wave.cloudfunctions.net/*"],
-  "manifest_version": 2,
+  "host_permissions": ["https://europe-southwest1-radio--wave.cloudfunctions.net/*"],
+  "manifest_version": 3,
+  "minimum_chrome_version": "150",
   "name": "Radio Wave",
-  "version": "2.2.9"
+  "permissions": ["alarms", "offscreen"],
+  "version": "3.0.0"
 }

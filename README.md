@@ -11,7 +11,7 @@
 </h4>
 
 <h5 align="center" fontSize="12px">
-  v2.2.2
+  v3.0.0
 </h5>
 
 <p align="center">
@@ -49,7 +49,7 @@ Congrats! Enjoy the radios.
 
 ## Station List
 
-Station list you can see in source file. [shared/stations.js](https://raw.githubusercontent.com/tryasko/RadioWaveExtension/master/shared/stations.js)
+Station list you can see in source file. [shared/stations.json](https://raw.githubusercontent.com/tryasko/RadioWaveExtension/master/shared/stations.json)
 
 Some popular stations:
 
