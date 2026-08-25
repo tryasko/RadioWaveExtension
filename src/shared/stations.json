@@ -5,6 +5,21 @@
     "station": "mfm"
   },
   {
+    "name": "Radio SKOVORODA",
+    "group": "UA",
+    "station": "radioskovoroda"
+  },
+  {
+    "name": "FM Галичина",
+    "group": "UA",
+    "station": "galychyna"
+  },
+  {
+    "name": "NRJ Radio",
+    "group": "UA",
+    "station": "nrjradio"
+  },
+  {
     "name": "ХІТ FM",
     "group": "TVR",
     "station": "HitFM"
